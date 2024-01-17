@@ -1,0 +1,84 @@
+body{
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 300px 1fr;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.sidebar{
+  background-color: blue;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border: black solid 3px;
+  padding: 100px;
+  
+}
+
+.header{
+  background-color: yellow;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border: black solid 3px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+
+
+.card{
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  
+  background-color: grey;
+  text-align: center;
+  border: 2px black solid;
+}
+
+#bookCard{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: black solid 3px;
+    padding: 40px;
+}
+ dialog{
+  background-color: grey;
+  
+ }
+
+ form>div{
+  padding: 10px;
+ }
+#bookSubmit::backdrop{
+  background-color: black;
+  opacity: 0.3;
+}
+
+#showDialog{
+  background-color: yellow;
+  border-radius: 12px;
+  border: solid black 2px;
+  width: 80px;
+  padding: 10px;
+}
+
+#read{
+  background-color: greenyellow;
+  border: 1px solid black;
+  
+}
+
+#notRead{
+  background-color: red;
+  border: 1px solid black;
+
+}
+
+
+.statusButton{
+  margin: 10px;
+}
